@@ -398,7 +398,7 @@ void ClassTable::semant_expression(class__class* class_, Expression expr) {
 				SymData* symdata = name_lookup(class_, name, true);
 				if ( !symdata ) {
 					ostream& os = semant_error(class_);
-					os << "Assignment to undeclared variable " << name << "." << endl;
+					os << "Atribuicao para variavel " << name << " nao declarada." << endl;
 				}
 				semant_expression(class_, assign->getExpression());
 				Symbol ret_type = assign->getExpression()->type;

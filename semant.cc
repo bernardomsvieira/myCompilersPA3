@@ -4,7 +4,7 @@
 #include "semant.h"
 #include "utilities.h"
 
-a
+
 extern int semant_debug;
 extern char *curr_filename;
 
